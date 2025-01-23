@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabz - Online Shopping</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Grabz</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search essentials, groceries and more...">
+                <button><i class="fas fa-search"></i></button>
+                <div class="search-results">
+                    <!-- Results will be populated dynamically -->
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="#" class="sign-in">
+                    <i class="fas fa-user"></i>
+                    Sign Up/Sign In
+                </a>
+                <div class="cart-wrapper">
+                    <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Cart
+                        <span class="cart-count">0</span>
+                    </a>
+                    <div class="cart-dropdown">
+                        <div class="cart-header">
+                            <h3>Shopping Cart</h3>
+                            <span class="cart-count">0 items</span>
+                        </div>
+                        <div class="cart-items">
+                            <!-- Cart items will be added here dynamically -->
+                        </div>
+                        <div class="cart-empty">
+                            <i class="fas fa-shopping-bag"></i>
+                            <p>Your cart is empty</p>
+                        </div>
+                        <div class="cart-footer">
+                            <div class="cart-total">
+                                <span>Total:</span>
+                                <span class="total-amount">₹0</span>
+                            </div>
+                            <button class="checkout-btn">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <button class="nav-scroll-btn left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <ul>
+                <li><a href="#daily-essentials" class="active">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span>Groceries</span>
+                    </a></li>
+                <li><a href="#fruits">
+                        <i class="fas fa-apple-alt"></i>
+                        <span>Premium Fruits</span>
+                    </a></li>
+                <li><a href="#home-kitchen">
+                        <i class="fas fa-home"></i>
+                        <span>Home & Kitchen</span>
+                    </a></li>
+                <li><a href="#fashion">
+                        <i class="fas fa-tshirt"></i>
+                        <span>Fashion</span>
+                    </a></li>
+                <li><a href="#electronics">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Electronics</span>
+                    </a></li>
+                <li><a href="#beauty">
+                        <i class="fas fa-spa"></i>
+                        <span>Beauty</span>
+                    </a></li>
+                <li><a href="#van-rental">
+                        <i class="fas fa-truck"></i>
+                        <span>Van Rental</span>
+                    </a></li>
+                <li><a href="#sports">
+                        <i class="fas fa-football-ball"></i>
+                        <span>Sports & Toys</span>
+                    </a></li>
+            </ul>
+            <button class="nav-scroll-btn right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div class="hero-slider">
+        <div class="slide active">
+            <div class="container">
+                <div class="slide-content">
+                    <h2>Best Deal Online on smart watches</h2>
+                    <h1>SMART WEARABLE.</h1>
+                    <p>UP to 80% OFF</p>
+                    <a href="#" class="cta-button">Shop Now</a>
+                </div>
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="Smart Watch">
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="container">
+                <div class="slide-content">
+                    <h2>Latest Smartphones</h2>
+                    <h1>MOBILE DEALS</h1>
+                    <p>UP to 60% OFF</p>
+                    <a href="#" class="cta-button">Shop Now</a>
+                </div>
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd" alt="Smartphone">
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="container">
+                <div class="slide-content">
+                    <h2>Premium Quality</h2>
+                    <h1>FRESH FRUITS</h1>
+                    <p>UP to 30% OFF</p>
+                    <a href="#" class="cta-button">Shop Now</a>
+                </div>
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b" alt="Fresh Fruits">
+                </div>
+            </div>
+        </div>
+
+        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots"></div>
+    </div>
+
+    <!-- Electronics Section (Grab the best deal) -->
+    <section id="electronics" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Grab the best deal on <span>Smartphones</span></h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-id="1">
+                    <div class="discount-tag">20% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf" alt="Galaxy S22 Ultra">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Galaxy S22 Ultra</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹49,999</span>
+                            <span class="original-price">₹62,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5 (2.5k)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More product cards -->
+                <div class="product-card" data-id="2">
+                    <div class="discount-tag">15% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a" alt="iPhone 13">
+                        <div class="product-actions">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹69,999</span>
+                            <span class="original-price">₹79,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (3.2k)</span>
+                            </div>
+                            <div class="delivery-info">Free Delivery</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="3">
+                    <div class="discount-tag">25% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179" alt="OnePlus 9 Pro">
+                        <div class="product-actions">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>OnePlus 9 Pro</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹54,999</span>
+                            <span class="original-price">₹69,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (1.8k)</span>
+                            </div>
+                            <div class="delivery-info">Free Delivery</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="4">
+                    <div class="discount-tag">10% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97" alt="Pixel 6 Pro">
+                        <div class="product-actions">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pixel 6 Pro</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹59,999</span>
+                            <span class="original-price">₹64,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.4 (956)</span>
+                            </div>
+                            <div class="delivery-info">Free Delivery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Essentials Section (Groceries) -->
+    <section id="daily-essentials" class="daily-essentials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Daily <span>Essentials</span></h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="essentials-grid">
+                <div class="essential-card">
+                    <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b" alt="Fresh Fruits">
+                    <div class="essential-info">
+                        <h3>Fresh Fruits</h3>
+                        <p>Starting from ₹99</p>
+                        <button class="shop-now">Shop Now</button>
+                    </div>
+                </div>
+                <div class="essential-card">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e" alt="Groceries">
+                    <div class="essential-info">
+                        <h3>Groceries</h3>
+                        <p>Up to 50% OFF</p>
+                        <button class="shop-now">Shop Now</button>
+                    </div>
+                </div>
+                <div class="essential-card">
+                    <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672" alt="Household">
+                    <div class="essential-info">
+                        <h3>Household</h3>
+                        <p>Starting from ₹199</p>
+                        <button class="shop-now">Shop Now</button>
+                    </div>
+                </div>
+                <div class="essential-card">
+                    <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f" alt="Personal Care">
+                    <div class="essential-info">
+                        <h3>Personal Care</h3>
+                        <p>Up to 40% OFF</p>
+                        <button class="shop-now">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Fruits Section -->
+    <section id="fruits" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Premium <span>Fruits</span></h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-id="f1">
+                    <div class="discount-tag">20% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587132137056-bfbf0166836e" alt="Fresh Apples">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Red Apples</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹199/kg</span>
+                            <span class="original-price">₹249/kg</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5 (120)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Same Day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="f2">
+                    <div class="discount-tag">15% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919" alt="Fresh Bananas">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Organic Bananas</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹69/dozen</span>
+                            <span class="original-price">₹89/dozen</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (95)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Same Day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="f3">
+                    <div class="discount-tag">25% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5" alt="Fresh Mangoes">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Alphonso Mangoes</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹399/kg</span>
+                            <span class="original-price">₹499/kg</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (150)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Same Day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="f4">
+                    <div class="discount-tag">10% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591287083773-9a9759f67553" alt="Fresh Oranges">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sweet Oranges</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹149/kg</span>
+                            <span class="original-price">₹169/kg</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (85)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Same Day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home & Kitchen Section -->
+    <section id="home-kitchen" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Home & <span>Kitchen</span></h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-id="h1">
+                    <div class="discount-tag">30% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1585515320310-259814833e62" alt="Coffee Maker">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Coffee Maker</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹4,999</span>
+                            <span class="original-price">₹7,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (230)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="h2">
+                    <div class="discount-tag">25% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078" alt="Air Fryer">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Digital Air Fryer</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹5,999</span>
+                            <span class="original-price">₹7,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (180)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="h3">
+                    <div class="discount-tag">20% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1621972750749-0fbb1abb7736" alt="Kitchen Set">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Complete Kitchen Set</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹2,399</span>
+                            <span class="original-price">₹2,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (150)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="h4">
+                    <div class="discount-tag">15% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25" alt="Vacuum Cleaner">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Robot Vacuum Cleaner</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹16,999</span>
+                            <span class="original-price">₹19,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (320)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fashion Section -->
+    <section id="fashion" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fashion <span>Store</span></h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-id="fa1">
+                    <div class="discount-tag">30% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990"
+                            alt="Men's Casual Shirt">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Men's Casual Shirt</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹899</span>
+                            <span class="original-price">₹1,299</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5 (230)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="fa2">
+                    <div class="discount-tag">25% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5" alt="Women's Dress">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Floral Summer Dress</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹1,499</span>
+                            <span class="original-price">₹1,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (180)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="fa3">
+                    <div class="discount-tag">40% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7651a899d37f" alt="Sports Shoes">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Running Shoes</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹2,999</span>
+                            <span class="original-price">₹4,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (320)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="fa4">
+                    <div class="discount-tag">20% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Watch">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Watch</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹3,999</span>
+                            <span class="original-price">₹4,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (150)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beauty Section -->
+    <section id="beauty" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Beauty & <span>Personal Care</span></h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-id="b1">
+                    <div class="discount-tag">35% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b" alt="Skincare Set">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Skincare Set</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹1,999</span>
+                            <span class="original-price">₹2,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (420)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="b2">
+                    <div class="discount-tag">25% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1527156231393-7023794f363c" alt="Makeup Kit">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Makeup Kit</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹3,499</span>
+                            <span class="original-price">₹4,699</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (350)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="b3">
+                    <div class="discount-tag">40% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571" alt="Hair Care Set">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxury Hair Care Set</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹1,799</span>
+                            <span class="original-price">₹2,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (280)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="b4">
+                    <div class="discount-tag">30% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594125311687-3b1b3eafa9f4" alt="Perfume">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Signature Perfume</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹2,499</span>
+                            <span class="original-price">₹3,599</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (520)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Van Container Section -->
+    <section id="van-rental" class="products-section van-container">
+        <div class="container">
+            <div class="section-header">
+                <h2>Rent a <span>Van</span> for your needs</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-id="5">
+                    <div class="discount-tag">15% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1624814448264-f2273a961d33" alt="Cargo Van">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Rent Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cargo Van - Daily Rental</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹2,499/day</span>
+                            <span class="original-price">₹2,999/day</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (320)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-clock"></i>
+                                24/7 Available
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="6">
+                    <div class="discount-tag">20% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600661653561-629509216228" alt="Passenger Van">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Rent Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>12-Seater Passenger Van</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹3,999/day</span>
+                            <span class="original-price">₹4,999/day</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (215)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-clock"></i>
+                                24/7 Available
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="7">
+                    <div class="discount-tag">10% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1616455579100-2ceaa4eb2d37" alt="Moving Van">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Rent Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Moving Van - Long Distance</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹4,499/day</span>
+                            <span class="original-price">₹4,999/day</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (180)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-clock"></i>
+                                24/7 Available
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports & Toys Section -->
+    <section id="sports" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sports & <span>Toys</span></h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-id="s1">
+                    <div class="discount-tag">30% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1531565637446-32307b194362" alt="Football">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Football</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹899</span>
+                            <span class="original-price">₹1,299</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (230)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="s2">
+                    <div class="discount-tag">25% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1615655406736-b37c4fabf923" alt="LEGO Set">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>LEGO City Building Set</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹2,999</span>
+                            <span class="original-price">₹3,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (180)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="s3">
+                    <div class="discount-tag">20% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608245449230-4ac19066d2d0" alt="Yoga Mat">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Yoga Mat</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹1,599</span>
+                            <span class="original-price">₹1,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (150)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="s4">
+                    <div class="discount-tag">35% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2" alt="Cricket Set">
+                        <div class="product-actions">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Complete Cricket Set</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹3,899</span>
+                            <span class="original-price">₹5,999</span>
+                        </div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (320)</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop By <span>Categories</span></h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Electronics</h3>
+                    <p>20+ Products</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Van Rental</h3>
+                    <p>15+ Vehicles</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <h3>Groceries</h3>
+                    <p>100+ Products</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Fashion</h3>
+                    <p>50+ Products</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home & Living</h3>
+                    <p>30+ Products</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Healthcare</h3>
+                    <p>25+ Products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section id="brands" class="brands-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top <span>Brands</span> for you</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="brands-slider">
+                <div class="brand-card">
+                    <img src="https://images.unsplash.com/photo-1633409361618-c73427e4e206" alt="Samsung">
+                    <h3>Samsung</h3>
+                    <p>Up to 40% OFF</p>
+                </div>
+                <div class="brand-card">
+                    <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9" alt="Apple">
+                    <h3>Apple</h3>
+                    <p>Up to 30% OFF</p>
+                </div>
+                <div class="brand-card">
+                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd" alt="OnePlus">
+                    <h3>OnePlus</h3>
+                    <p>Up to 35% OFF</p>
+                </div>
+                <div class="brand-card">
+                    <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd" alt="Google Pixel">
+                    <h3>Google</h3>
+                    <div class="brand-info">
+                        <p>Up to 25% OFF</p>
+                        <span>On Pixel Series</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Grabz</h3>
+                    <p>Your one-stop destination for online shopping, van rentals, and daily essentials. We provide
+                        quality products and services at the best prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Van Rental</a></li>
+                        <li><a href="#">Groceries</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Home & Living</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Street Name, City, Country</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 234 567 8900</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>support@grabz.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Grabz. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
